@@ -1,24 +1,24 @@
-# Getting Started
+# Começar {#Getting-Started}
 
-Welcome to Vue Test Utils, the official testing utility library for Vue.js!
+Nós estamos na Vue Test Utils, a biblioteca oficial de utilitário de teste para Vue.js!
 
-This is the documentation for Vue Test Utils v2, which targets Vue 3.
+Esta é a documentação da Vue Test Utils versão 2, que tem como alvo a Vue 3.
 
-In short:
+Em suma:
 
-- [Vue Test Utils 1](https://github.com/vuejs/vue-test-utils/) targets [Vue 2](https://github.com/vuejs/vue/).
-- [Vue Test Utils 2](https://github.com/vuejs/test-utils/) targets [Vue 3](https://github.com/vuejs/core/).
+- [Vue Test Utils 1](https://github.com/vuejs/vue-test-utils/) tem como objetivo a [Vue 2](https://github.com/vuejs/vue/).
+- [Vue Test Utils 2](https://github.com/vuejs/test-utils/) tem como objetivo a [Vue 3](https://github.com/vuejs/core/).
 
-## What is Vue Test Utils?
+## Que é a Vue Test Utils? {#What-is-Vue-Test-Utils-}
 
-Vue Test Utils (VTU) is a set of utility functions aimed to simplify testing Vue.js components. It provides some methods to mount and interact with Vue components in an isolated manner.
+A Vue Test Utils (VTU) é um conjunto de funções utilitárias destinadas a simplificar o teste de componentes da Vue.js. Este fornece alguns métodos para montar e interagir com os componentes da Vue duma maneira isolada.
 
-Let's see an example:
+Eis um exemplo:
 
 ```js
 import { mount } from '@vue/test-utils'
 
-// The component to test
+// O componente a testar
 const MessageComponent = {
   template: '<p>{{ msg }}</p>',
   props: ['msg']
@@ -31,29 +31,29 @@ test('displays message', () => {
     }
   })
 
-  // Assert the rendered text of the component
+  // Asserir o texto desenhado do componente
   expect(wrapper.text()).toContain('Hello world')
 })
 ```
 
-Vue Test Utils is commonly used with a test runner. Popular test runners include:
+A Vue Test Utils é comummente usada com uma ferramenta de execução de teste. As ferramentas de execução de teste populares incluem:
 
-- [Vitest](https://vitest.dev/). Terminal based, has experimental browser UI.
-- [Cypress](https://cypress.io/). Browser based, supports Vite, webpack.
-- [Playwright](https://playwright.dev/docs/test-components) (experimental). Browser based, supports Vite.
-- [WebdriverIO](https://webdriver.io/docs/component-testing/vue). Browser based, supports Vite, Webpack, cross browser support.
+- [Vitest](https://vitest.dev/). Baseada no Terminal, tem uma interface de navegador experimental.
+- [Cypress](https://cypress.io/). Baseada no navegador, suporta, Vite, Webpack.
+- [Playwright](https://playwright.dev/docs/test-components) (experimental). Baseada no navegador, suporta a Vite.
+- [WebdriverIO](https://webdriver.io/docs/component-testing/vue). Baseada no navegador, suporta a Vite, Webpack, suporta vários navegadores.
 
-Vue Test Utils is a minimal and unopinionated library. For something more featureful, ergonomic and opinionated you may want to consider [Cypress Component Testing](https://docs.cypress.io/guides/component-testing/overview) which has a hot reload development environment, or [Testing Library](https://testing-library.com/docs/vue-testing-library/intro/) which emphasizes accessibility based selectors when making assertions. Both of these tools use Vue Test Utils under the hood and expose the same API.
+A Vue Test Utils é uma biblioteca minimalista e sem opinião. Para algo mais rico em funcionalidades, ergonómica e com mais opinião podemos considerar o [Teste de Componente da Cypress](https://docs.cypress.io/guides/component-testing/overview) que tem um ambiente de desenvolvimento de recarga instantânea, ou a [Biblioteca de Teste](https://testing-library.com/docs/vue-testing-library/intro/) que enfatiza os seletores baseados na acessibilidade quando fazemos asserções. Ambas ferramentas usam a Vue Test Utils nos bastidores e expõem a mesma API.
 
-## What Next?
+## Que se Segue? {#What-Next-}
 
-To see Vue Test Utils in action, [take the Crash Course](../guide/essentials/a-crash-course.md), where we build a simple Todo app using a test-first approach.
+Para vermos a Vue Test Utils em ação, [podemos realizar o Curso Intensivo](../guide/essentials/a-crash-course), onde construímos uma aplicação de controlo de tarefas usando a abordagem de testar primeiro.
 
-Docs are split into two main sections:
+A documentação está dividida em duas secções principais:
 
-- **Essentials**, to cover common use cases you'll face when testing Vue components.
-- **Vue Test Utils in Depth**, to explore other advanced features of the library.
+- **Fundamentos**, para cobrir os casos de uso comuns que enfrentaremos quando testarmos os componentes da Vue.
+- **Vue Test Utils em Profundidade**, para explorar outras funcionalidades avançadas da biblioteca.
 
-You can also explore the full [API](../api/).
+Nós também podemos explorar a [API](../api/) completa.
 
-Alternatively, if you prefer to learn via video, there is [a number of lectures available here](https://www.youtube.com/playlist?list=PLC2LZCNWKL9ahK1IoODqYxKu5aA9T5IOA).
+Alternativamente, se preferirmos aprender através de vídeo, existe [um número de palestras disponíveis nesta ligação](https://www.youtube.com/playlist?list=PLC2LZCNWKL9ahK1IoODqYxKu5aA9T5IOA).
