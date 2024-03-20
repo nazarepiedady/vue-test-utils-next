@@ -2,16 +2,16 @@
 layout: home
 
 title: Vue Test Utils
-titleTemplate: Vue Test Utils for Vue.js 3
+titleTemplate: Vue Test Utils para Vue.js 3
 
 hero:
   name: Vue Test Utils
-  text: Test Utils for Vue.js 3
-  tagline: The official testing suite utils for Vue.js 3
+  text: Utilitários de Teste para Vue.js 3
+  tagline: Os utilitários de conjunto de teste oficial para Vue.js 3
   image:
     src: /logo.svg
     alt: Vue Test Utils
   actions:
     - theme: brand
-      text: Get Started →
+      text: Começar →
       link: /guide/
