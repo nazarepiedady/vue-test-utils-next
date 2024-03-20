@@ -1,20 +1,20 @@
-# Installation
+# Instalação {#Installation}
 
 ```bash
 npm install --save-dev @vue/test-utils
 
-# or
+# ou
 yarn add --dev @vue/test-utils
 ```
 
-## Usage
+## Uso {#Usage}
 
-Vue Test Utils is framework agnostic - you can use it with whichever test runner you like. The easiest way to try it out is using [Jest](https://jestjs.io/), a popular test runner.
+A Vue Test Utils é agnóstica em relação a abstração - podemos usá-la com qualquer executor de teste que quisermos. A maneira mais fácil de experimentá-la é usando a [Jest](https://jestjs.io/), uma ferramenta popular de execução de testes.
 
-To load `.vue` files with Jest, you will need `vue-jest`. `vue-jest` v5 is the one that supports Vue 3. It is still in alpha, much like the rest of the Vue.js 3 ecosystem, so if you find a bug please report it [here](https://github.com/vuejs/vue-jest/) and specify you are using `vue-jest` v5.
+Para carregar os ficheiros `.vue` com a Jest, precisaremos da `vue-jest`. A `vue-jest` versão 5 é a que suporta a Vue 3. Esta ainda está na versão alfa, assim como o resto do ecossistema da Vue.js 3, então se encontrarmos um erro de programação, podemos reportá-lo [nesta ligação](https://github.com/vuejs/vue-jest/) e especificar que estamos usando a `vue-jest` versão 5.
 
-You can install it with `vue-jest@next`. Then you need to configure it with Jest's [transform](https://jestjs.io/docs/en/configuration#transform-objectstring-pathtotransformer--pathtotransformer-object) option.
+Nós podemos instalá-la com `vue-jest@next`. Depois precisamos configurá-la com a opção [`transform`](https://jestjs.io/docs/en/configuration#transform-objectstring-pathtotransformer--pathtotransformer-object) da Jest.
 
-If you dont want to configure it yourself, you can get a minimal repository with everything set up [here](https://github.com/lmiller1990/vtu-next-demo).
+Se não quisermos configurá-la nós próprios, podemos obter um repositório mínimo com tudo configurado [nesta ligação](https://github.com/lmiller1990/vtu-next-demo).
 
-Continue reading to learn more about Vue Test Utils.
+Precisamos continuar a leitura para aprendermos mais sobre a Vue Test Utils.
