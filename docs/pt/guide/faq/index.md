@@ -1,34 +1,32 @@
-# FAQ
+# Questões Frequentes {#FAQ}
 
 [[toc]]
 
-## Mocking Dates and Timers with Vitest
+## Simulando Datas e Temporizadores com a Vitest {#Mocking-Dates-and-Timers-with-Vitest}
 
-Vue's scheduler depends on the system time. Make sure to mount components
-*after* calling `vi.setSystemTime`, since Vue depends on its side effects.
-Mounting components before calling `vi.setSystemTime` may cause breaks in
-reactivity.
+O agendador da Vue depende da hora do sistema. Temos de certificar-nos de montar os componentes *depois* de chamar `vi.setSystemTime`, já que a Vue depende dos seus efeitos colaterais. A montagem dos componentes antes de chamar `vi.setSystemTime` pode causar quebras na reatividade.
 
-See [vuejs/test-utils#2074](https://github.com/vuejs/test-utils/issues/2074).
+Consultar a [vuejs/test-utils#2074](https://github.com/vuejs/test-utils/issues/2074).
 
-## Vue warn: Failed setting prop
+## Aviso da Vue: Falha na definição da propriedade {#Vue-warn-Failed-setting-prop}
 
 ```
 [Vue warn]: Failed setting prop "prefix" on <component-stub>: value foo is invalid.
 TypeError: Cannot set property prefix of #<Element> which has only a getter
 ```
 
-This warning is shown in case you are using `shallowMount` or `stubs` with a property name that is shared with [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element).
+Este aviso é mostrado no caso de estivermos usando `shallowMount` ou `stubs` com um nome de propriedade que é partilhado com o [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element).
 
-Common property names that are shared with `Element`:
+Nomes de propriedades comuns que são partilhados com o `Element`:
+
 * `attributes`
 * `children`
 * `prefix`
 
-See: https://developer.mozilla.org/en-US/docs/Web/API/Element
+Consultar: [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element)
 
-**Possible solutions**
+**Soluções possíveis**
 
-1. Use `mount` instead of `shallowMount` to render without stubs
-2. Ignore the warning by mocking `console.warn`
-3. Rename the prop to not clash with `Element` properties
+1. Usar `mount` ao invés de `shallowMount` para desenhar sem os esboços
+2. Ignorar o aviso através da simulação de `console.warn`
+3. Renomear a propriedade para não entrar em conflito com as propriedades do `Element`.
