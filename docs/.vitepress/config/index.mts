@@ -1,5 +1,6 @@
 import { enConfig } from './en.mts'
 import { frConfig } from './fr.mts'
+import { ptConfig } from './pt.mjs'
 import { sharedConfig } from './shared.mts'
 import { defineConfig } from 'vitepress'
 
@@ -9,5 +10,6 @@ export default defineConfig({
   locales: {
     root: { label: 'English', lang: 'en-US', link: '/', ...enConfig },
     fr: { label: 'Français',  lang: 'fr-FR', link: '/fr/', ...frConfig },
+    pt: { label: 'Português', lang: 'pt-PT', link: '/pt/', ...ptConfig },
   }
 })
