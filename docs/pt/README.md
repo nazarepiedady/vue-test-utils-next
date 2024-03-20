@@ -1,43 +1,39 @@
 # Vue Test Utils
 
-Component testing utils for Vue 3.
+Utilitários de teste de componente para Vue 3.
 
-## Languages
-
-[🇫🇷 French version of this README.md](https://github.com/vuejs/test-utils/tree/main/docs/fr/README.md)
-
-## Installation and Usage
+## Instalação e Uso
 
 - yarn: `yarn add @vue/test-utils --dev`
 - npm: `npm install @vue/test-utils --save-dev`
 
-Get started with the [documentation](https://test-utils.vuejs.org/).
+Começar com a [documentação](https://test-utils.vuejs.org/pt).
 
-## Coming from Vue 2 + Test Utils v1?
+## Viemos da Vue 2 + Test Utils v1?
 
-[Check the migration guide](https://test-utils.vuejs.org/migration/). It's still a work in progress. If you find a problem or something that doesn't work that previously did in Vue Test Utils v1, please open an issue.
+[Consultar o guia de migração](https://test-utils.vuejs.org/pt/migration/). Este continua em andamento. Se encontrarmos um problema ou algo que não funcione que anteriormente funcionava na primeira versão da Vue Test Utils, podemos abrir um problema.
 
-## Documentation
+## Documentação
 
-See the [docs](https://test-utils.vuejs.org/).
+Consultar a [documentação](https://test-utils.vuejs.org/pt).
 
-## Development
+## Desenvolvimento
 
-Get started by running `pnpm install`. You can run the tests with `pnpm test`. That's it!
+Começamos por executar `pnpm install`. Podemos executar os testes com `pnpm test`. É tudo!
 
-## Contributing Docs
+## Documentação de contribuição
 
-All the documentation files can be found in `packages/docs`. It contains the English markdown files while translation(s) are stored in their corresponding `<lang>` sub-folder(s):
+Todos os ficheiros da documentação podem ser encontrados na `packages/docs`. Contém os ficheiros de markdown em Inglês, enquanto as traduções são armazenadas nas suas sub-pastas `<lang>` correspondentes:
 
-- [`fr`](https://github.com/vuejs/test-utils/tree/main/packages/docs/fr): French translation.
+- [`fr`](https://github.com/vuejs/test-utils/tree/main/packages/docs/fr): Tradução francesa.
 
-Besides that, the `.vitepress` sub-folder contains the config and theme, including the i18n information.
+Além disto, a sub-pasta `.vitepres` contém a configuração e o tema, incluindo a informação i18n.
 
-- `pnpm docs:dev`: Start the docs dev server.
-- `pnpm docs:build`: Build the docs.
+- `pnpm docs:dev`: Iniciar o servidor de desenvolvimento da documentação
+- `pnpm docs:build`: Construir a documentação.
 
-To add or maintain the translations, we follow the [Vue Ecosystem Translation Guidelines](https://github.com/vuejs-translations/guidelines/blob/main/README_ECOSYSTEM.md).
+Para adicionar ou manter as traduções, seguimos as [Diretrizes de Tradução do Ecossistema da Vue](https://github.com/vuejs-translations/guidelines/blob/main/README_ECOSYSTEM.md).
 
-- `pnpm docs:translation:status [<lang>]`: Show the translation status for your language. If you don't specify a language, it will show the status for all languages.
-- `pnpm docs:translation:compare <lang>`: Compare the docs with the latest checkpoint for your language.
-- `pnpm docs:translation:update <lang> [<commit>]`: Update the checkpoint for your language. The checkpoint will be set by the latest commit hash. However, you can also specify a commit hash manually.
+- `pnpm docs:translation:status [<lang>]`: Mostrar o estado da tradução para a nossa língua. Se não especificarmos uma língua, será mostrado o estado de todas as línguas.
+- `pnpm docs:translation:compare <lang>`: Comparar a documentação com o último ponto de verificação da nossa língua.
+- `pnpm docs:translation:update <lang> [<commit>]`: Atualizar o ponto de verificação para a nossa língua. O ponto de verificação será definido pela sequência de caracteres aleatórios de compromisso mais recente. No entanto, também podemos especificar uma sequência de caracteres aleatórios de compromisso manualmente.
